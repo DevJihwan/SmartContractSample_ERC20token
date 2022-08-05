@@ -15,7 +15,23 @@ ERC20이란 승인받은 개선 제안서 : EIP(Ethereum Imporvement Proposal) -
         * contacts : 스마트컨트랙트 작성 폴더
         * migrations : 배포 
     01. npm install openzeppelin-solidity --save (openzeppelin은 ERC20 토큰 발행 관련 오픈소스임)
+    02. <폴더>   /contracts 에서 SampleToken.sol 작성 
+    03. <명령어> truffle compile
+    04. <폴더>   /build/contracts 폴도에 json 형태의 문서 생성 확인 
+    05. truffle-config.js 에서 ㅣocalhost (host: "127.0.0.1") 및 port (7545) 확인 (ganache와 연결됨)
+    06. <명령어> truffle migrate --reset
+        * Deploying "SampleToke"에서 contract address 확인 (이게 Token 주소)
+        * 위 토큰 주소를 metamask에 등록 
+    
 
+
+# ERC20 Token 발행 예제 관련 참고 내용
+    * 구글링에 떠다니는 대부분의 예제는 solidity 0.5 version 수준. 현재 solidity 0.8 version
+    * ERC20Detailed.sol은 이제 사용하지 않음. 
 
 # 참고자료 
- [openzeppelin-solidity rule.sol에 대한 설명] https://betterprogramming.pub/how-to-use-openzeppelins-new-accesscontrol-contract-5b49a4bcd160
+ [openzeppelin-solidity rule.sol에 대한 설명] 
+    * https://betterprogramming.pub/how-to-use-openzeppelins-new-accesscontrol-contract-5b49a4bcd160
+ [openzeppelin_ ERC20.sol에 대한 설명 및 Token 발행 방법 설명]
+    * https://docs.openzeppelin.com/contracts/4.x/erc20
+    * https://docs.openzeppelin.com/contracts/4.x/erc20-supply
