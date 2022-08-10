@@ -19,6 +19,9 @@ ERC20이란 승인받은 개선 제안서 : EIP(Ethereum Imporvement Proposal) -
         03. https://faucet.egorfine.com/ 접속하여 Rosten Eth 받아오기 
         04. 5분 이내 10ETH 수신 확인 
 
+# Ether Scan 
+    * https://ropsten.etherscan.io/address/0xb05ecc7a07215f39e41c78112530f6fc70c6adbc (리믹스에서 발행된 DWT 추적)
+
 # Manual for programming
     00. truffle init (트러플 프로젝트 생성)
         * contacts : 스마트컨트랙트 작성 폴더

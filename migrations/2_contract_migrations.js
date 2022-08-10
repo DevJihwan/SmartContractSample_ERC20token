@@ -1,4 +1,4 @@
-const SampleToken = artifacts.require("SampleToken.sol");
+let SampleToken = artifacts.require("SampleToken");
 
 module.exports = function(deployer) {
      deployer.deploy(SampleToken);
