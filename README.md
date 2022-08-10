@@ -10,6 +10,15 @@ ERC20이란 승인받은 개선 제안서 : EIP(Ethereum Imporvement Proposal) -
     *   ERC721 : NFT 코인 발행 표준, 코인간 등가교환 불가 
     *   ERC1155 : 한정된 수량으로 동일 가치 NFT
 
+# Ropsten TestNet
+    * 이더리움 테스트를 위한 네트워크, 메인넷에 전혀 영향을 주지 않음. 
+    * Ropsten 외 Rinkeby, Kovan 등의 테스트넷이 있음. 편의상 가장 많이 사용하는 Ropsten에서 테스트 배포
+    * 설정방법
+        01. 메타마스크 테스트넷 계정 활성화 : 설정 - 고급 - 테스트 네트워크 보기 활성화
+        02. Ropsten 테스트 네트워크 지갑 확인 
+        03. https://faucet.egorfine.com/ 접속하여 Rosten Eth 받아오기 
+        04. 5분 이내 10ETH 수신 확인 
+
 # Manual for programming
     00. truffle init (트러플 프로젝트 생성)
         * contacts : 스마트컨트랙트 작성 폴더
