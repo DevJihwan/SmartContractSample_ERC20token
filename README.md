@@ -19,6 +19,19 @@ ERC20이란 승인받은 개선 제안서 : EIP(Ethereum Imporvement Proposal) -
         03. https://faucet.egorfine.com/ 접속하여 Rosten Eth 받아오기 
         04. 5분 이내 10ETH 수신 확인 
 
+# 테스트넷에서 ERC20 토큰을 배포하는 방법 
+    * 리믹스
+    * vscode 
+        01. infura.io/ 회원가입 
+        02. API Key 확인 
+        03. truffle-config.js 수정 line21 - 25, 63-70 주석 해제 
+        04. const infurakey = <API key 입력>;
+        05. <설치> npm install @truffle/hdwallet-provider
+        06. root폴더 밑에서 .secret 파일생성 및 hdwallet 내용 입력 
+        07. truffle migrate --network ropsten
+    [참고] : https://kimsfamily.kr/331
+
+
 # Ether Scan 
     * https://ropsten.etherscan.io/address/0xb05ecc7a07215f39e41c78112530f6fc70c6adbc (리믹스에서 발행된 DWT 추적)
 
